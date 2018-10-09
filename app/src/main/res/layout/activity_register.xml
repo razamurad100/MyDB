@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/username_editText_register_activity"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/email_editText2_register_activity"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/username_editText_register_activity"
+        app:layout_constraintStart_toStartOf="@+id/username_editText_register_activity"
+        app:layout_constraintTop_toBottomOf="@+id/username_editText_register_activity"
+        android:autofillHints="" tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/password_editText3_register_activity"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/email_editText2_register_activity"
+        app:layout_constraintStart_toStartOf="@+id/email_editText2_register_activity"
+        app:layout_constraintTop_toBottomOf="@+id/email_editText2_register_activity" tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/register_button_register_acrivity"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/register"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/password_editText3_register_activity"
+        app:layout_constraintStart_toStartOf="@+id/password_editText3_register_activity"
+        app:layout_constraintTop_toBottomOf="@+id/password_editText3_register_activity" />
+
+    <TextView
+        android:id="@+id/backtologin_textView_registeractivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/back_to_login"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/register_button_register_acrivity"
+        app:layout_constraintStart_toStartOf="@+id/register_button_register_acrivity"
+        app:layout_constraintTop_toBottomOf="@+id/register_button_register_acrivity" />
+
+</android.support.constraint.ConstraintLayout>
